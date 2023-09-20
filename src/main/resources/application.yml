@@ -13,7 +13,7 @@ spring:
   cloud:
     gateway:
       routes:
-        - id: bravoTeam-service
+        - id: management-service
           uri: lb://BRAVOTEAM-SERVICE
           predicates:
-            - Path=/bravoTeam-service/**
+            - Path=/management-service/**
