@@ -13,7 +13,7 @@ spring:
   cloud:
     gateway:
       routes:
-        - id: management-service
+        - id: api
           uri: lb://api
           predicates:
             - Path=/api/**
