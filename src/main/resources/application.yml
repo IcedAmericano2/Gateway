@@ -16,4 +16,4 @@ spring:
         - id: management-service
           uri: lb://BRAVOTEAM-SERVICE
           predicates:
-            - Path=/management-service/**
+            - Path=/api/**
