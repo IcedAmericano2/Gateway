@@ -3,7 +3,7 @@ server:
 
 eureka:
   instance:
-    hostname: gateway.studio.i
+    hostname: api.gateway
   client:
     register-with-eureka: true
     fetch-registry: true
