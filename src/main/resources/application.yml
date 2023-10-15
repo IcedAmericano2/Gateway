@@ -2,6 +2,9 @@ server:
   port: 8000
 
 eureka:
+  instance:
+    hostname: gateway.studio.i
+    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
   client:
     register-with-eureka: true
     fetch-registry: true
@@ -10,7 +13,7 @@ eureka:
 
 spring:
   application:
-    name: api-gateway-service
+    name: gateway-service
   cloud:
     gateway:
       routes:
