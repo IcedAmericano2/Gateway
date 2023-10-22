@@ -24,7 +24,7 @@ spring:
   cloud:
     gateway:
       routes:
-        - id: api
+        - id: Management-Service
           uri: http://3.35.179.234:8080/
           predicates:
             - Path=/api/**
