@@ -16,7 +16,7 @@ management:
 
 spring:
   application:
-    name: gateway-service-local
+    name: gateway-service
   cloud:
     gateway:
       routes:
