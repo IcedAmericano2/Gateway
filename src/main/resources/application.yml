@@ -4,8 +4,6 @@ server:
 eureka:
   instance:
     hostname : 13.125.181.139
-    lease-renewal-interval-in-seconds: 1
-    lease-expiration-duration-in-seconds: 2
   client:
     register-with-eureka: true
     fetch-registry: true
