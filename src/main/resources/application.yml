@@ -19,7 +19,7 @@ management:
 
 spring:
   application:
-    name: gateway-service-prod
+    name: gateway-service
   cloud:
     gateway:
       routes:
