@@ -2,9 +2,6 @@ server:
   port: 8000
 
 eureka:
-  instance:
-    hostname : 13.125.181.139
-    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
   client:
     register-with-eureka: true
     fetch-registry: true
@@ -19,7 +16,7 @@ management:
 
 spring:
   application:
-    name: gateway-service
+    name: gateway-service-local
   cloud:
     gateway:
       routes:
