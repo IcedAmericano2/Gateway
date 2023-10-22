@@ -18,11 +18,11 @@ management:
 
 spring:
   application:
-    name: api-gateway-service
+    name: apigateway-service
   cloud:
     gateway:
       routes:
         - id: api
-          uri: lb://API
+          uri: http://3.35.179.234:8080/
           predicates:
             - Path=/api/**
