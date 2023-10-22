@@ -23,8 +23,6 @@ spring:
     gateway:
       routes:
         - id: api
-          uri: lb://api
+          uri: lb://API
           predicates:
             - Path=/api/**
-
-
