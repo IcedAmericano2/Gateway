@@ -27,6 +27,6 @@ spring:
           predicates:
             - Path=/api/**
         - id: User-Service
-          uri: http://15.164.100.22:8081/
+          uri: http://52.78.46.139:8081/
           predicates:
             - Path=/user-service/**
