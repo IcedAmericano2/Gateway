@@ -61,8 +61,9 @@ jobs:
 
           script: |
             sudo docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}
-            sudo docker rm -f $(sudo docker ps -qa)
+            sudo docker stop -f gateway_container
+            sudo docker rm -f gateway_container
             
             sudo docker pull ${{ secrets.DOCKER_USERNAME }}/${{ secrets.DOCKER_REPO }}
-            sudo docker run -d -p 8000:8000 ${{ secrets.DOCKER_USERNAME }}/${{ secrets.DOCKER_REPO }}:latest
+            sudo docker run -d -p 8000:8000 --name gateway_container ${{ secrets.DOCKER_USERNAME }}/${{ secrets.DOCKER_REPO }}:latest
     
